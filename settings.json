@@ -38,5 +38,19 @@
                 }
             ]
         }
-    ]
+    ],
+    "vspacecode.bindingOverrides": [
+    {
+      "keys": "g.s",
+      "name": "Status",
+      "type": "command",
+      "command":"magit.status",
+    },
+    {
+      "keys": "c.d",
+      "name": "Jump to definition",
+      "type": "command",
+      "command":"editor.action.revealDefinition"
+    }
+]
 }
