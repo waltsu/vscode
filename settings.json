@@ -53,10 +53,22 @@
       "command": "editor.action.revealDefinition"
     },
     {
+      "keys": "c.D",
+      "name": "Search all references",
+      "type": "command",
+      "command": "editor.action.referenceSearch.trigger"
+    },
+    {
       "keys": "c.h",
       "name": "Show Hover",
       "type": "command",
       "command": "editor.action.showHover"
+    },
+    {
+      "keys": "c.f",
+      "name": "Show search",
+      "type": "command",
+      "command": "workbench.view.search"
     }
   ],
   "editor.formatOnSave": true,
