@@ -51,6 +51,12 @@
       "name": "Jump to definition",
       "type": "command",
       "command":"editor.action.revealDefinition"
+    },
+    {
+      "keys": "c.h",
+      "name": "Show Hover",
+      "type": "command",
+      "command":"editor.action.showHover"
     }
 ]
 }
