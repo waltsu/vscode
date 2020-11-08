@@ -41,7 +41,7 @@
   ],
   "vspacecode.bindingOverrides": [
     {
-      "keys": "g.s",
+      "keys": "g.g",
       "name": "Status",
       "type": "command",
       "command": "magit.status"
