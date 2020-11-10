@@ -75,5 +75,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "prettier.singleQuote": true,
+  "ruby.useLanguageServer": true,
+  "editor.tabSize": 2
 }
