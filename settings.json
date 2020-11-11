@@ -69,6 +69,12 @@
       "name": "Show search",
       "type": "command",
       "command": "workbench.view.search"
+    },
+    {
+      "keys": "c.x",
+      "name": "Show problems",
+      "type": "command",
+      "command": "workbench.actions.view.problems"
     }
   ],
   "editor.formatOnSave": true,
