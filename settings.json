@@ -84,6 +84,9 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "prettier.singleQuote": true,
   "editor.tabSize": 2,
   "debug.javascript.unmapMissingSources": true,
@@ -95,5 +98,12 @@
       "useBundler": true
     }
   },
-  "ruby.format": "rubocop"
+  "ruby.format": "rubocop",
+  "prettier.jsxSingleQuote": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ]
 }
