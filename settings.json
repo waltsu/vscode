@@ -113,5 +113,9 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "python.linting.mypyEnabled": true
+  "python.linting.mypyEnabled": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.insertFinalNewline": true
 }
