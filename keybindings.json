@@ -11,12 +11,12 @@
   {
     "key": "tab",
     "command": "extension.vim_tab",
-    "when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
   },
   {
     "key": "tab",
     "command": "-extension.vim_tab",
-    "when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
   },
   {
     "key": "x",
@@ -123,5 +123,25 @@
     "key": "ctrl+l",
     "command": "file-browser.stepIn",
     "when": "inFileBrowser"
-  }
+},
+{
+	"key": "space",
+	"command": "vspacecode.space",
+	"when": "sideBarFocus && !inputFocus && !whichkeyActive"
+},
+{
+	"key": "ctrl+j",
+	"command": "selectNextCodeAction",
+	"when": "codeActionMenuVisible"
+},
+{
+	"key": "ctrl+k",
+	"command": "selectPrevCodeAction",
+	"when": "codeActionMenuVisible"
+},
+{
+	"key": "ctrl+l",
+	"command": "acceptSelectedCodeAction",
+	"when": "codeActionMenuVisible"
+}
 ]

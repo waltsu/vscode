@@ -87,7 +87,25 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.rulers": [
+      120
+    ],
+    "editor.semanticHighlighting.enabled": true
+  },
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
   "prettier.singleQuote": true,
+  "prettier.requireConfig": true,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "debug.javascript.unmapMissingSources": true,
@@ -100,6 +118,8 @@
     }
   },
   "ruby.format": "rubocop",
+  "ruby.rubocop.configFilePath": ".rubocop.yml",
+  "ruby.intellisense": "rubyLocate",
   "prettier.jsxSingleQuote": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
@@ -113,9 +133,27 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "python.linting.mypyEnabled": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "mermaid-editor.generate.type": "svg",
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "flake8.importStrategy": "fromEnvironment",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportShadowedImports": "none"
+  },
+  "phpstan.configPath": "/Users/waltsu/workspace/smartly-v1/test/php_codestyle/phpstan.neon",
+  "phpstan.path": "./system/vendor/bin/phpstan",
+  "php-cs-fixer.lastDownload": 1695106024720,
+  "editor.snippets.codeActions.enabled": false,
+  "editor.suggest.showSnippets": false,
+  "jupyter.runStartupCommands": [
+    "%load_ext autoreload", "%autoreload 2"
+],
+"editor.stickyScroll.enabled": false
 }
