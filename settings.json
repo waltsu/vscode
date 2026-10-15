@@ -134,14 +134,16 @@
     "jupyter-notebook": "left"
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
   },
   "files.insertFinalNewline": true,
-  "mermaid-editor.generate.type": "svg",
+  "mermaid-editor.generate.type": "png",
   "[python]": {
-    "editor.formatOnType": true,
+    "editor.formatOnType": false,
     "editor.tabSize": 4,
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": false
   },
   "flake8.importStrategy": "fromEnvironment",
   "python.analysis.diagnosticSeverityOverrides": {
@@ -155,5 +157,19 @@
   "jupyter.runStartupCommands": [
     "%load_ext autoreload", "%autoreload 2"
 ],
-"editor.stickyScroll.enabled": false
+"editor.stickyScroll.enabled": false,
+"mermaid-editor.generate.scale": 10,
+"mermaid-editor.generate.quality": 1,
+"workbench.colorTheme": "Mermaid Dark",
+"github.copilot.nextEditSuggestions.enabled": true,
+"[dockercompose]": {
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.autoIndent": "advanced",
+  "editor.defaultFormatter": "redhat.vscode-yaml"
+},
+"[github-actions-workflow]": {
+  "editor.defaultFormatter": "redhat.vscode-yaml"
+},
+"biome.suggestInstallingGlobally": false
 }

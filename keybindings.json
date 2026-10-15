@@ -8,15 +8,24 @@
   // Keybindings required for edamagit
   // https://github.com/kahole/edamagit#vim-support-vscodevim
   // Cannot be added to package.json because keybinding replacements
+
   {
-    "key": "tab",
-    "command": "extension.vim_tab",
-    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && editorLangId != 'magit'"
+     "key": "g g",
+     "command": "cursorTop",
+     "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
+  },
+  { "key": "g r",
+     "command": "magit.refresh",
+     "when": "editorTextFocus && editorLangId == 'magit' && vim.mode =~ /^(?!SearchInProgressMode|CommandlineInProgress).*$/"
   },
   {
     "key": "tab",
-    "command": "-extension.vim_tab",
-    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    "command": "extension.vim_tab",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert' && !inlineEditIsVisible && editorLangId != 'magit'"
+  },
+  {
+    "key": "tab",
+    "command": "-extension.vim_tab"
   },
   {
     "key": "x",
@@ -62,6 +71,7 @@
     "key": "ctrl+u x",
     "command": "-magit.reset-hard"
   },
+
   // Extra ref menu support for edamagit with the key "y"
   // Cannot be added to package.json because keybinding replacements
   {
